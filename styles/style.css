@@ -47,8 +47,11 @@
   outline: none;
 }
 
-/* Отсутствует .header__theme-menu-button:focus-visible */
+.header__theme-menu-button:focus-visible {
+  border-bottom: 1px solid var(--btn-color);
+}
 
+/* Ошибка 4: должно быть разное поведение для light и dark тем */
 .header__theme-menu-button:hover {
   border: 1px solid rgba(255, 0, 112, 0.40);
   cursor: pointer;
@@ -116,7 +119,7 @@
   font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   color: var(--title-color);
   font-weight: 700;
-  /* Отсутствует line-height */
+  line-height: 82.5%;
 }
 
 .title-decor {
@@ -165,7 +168,10 @@
   outline: none;
 }
 
-/* Отсутствует .question__section-answer-link:focus-visible */
+/* Ошибка 5: должно быть outline вместо border */
+.question__section-answer-link:focus-visible {
+  border: 1px solid var(--text-color);
+}
 
 /*Первая секция с вопросами*/
 
