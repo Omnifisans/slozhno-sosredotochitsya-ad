@@ -31,7 +31,7 @@
 .header__theme-menu-button {
   padding: 0 13px;
   color: var(--btn-color);
-  /* Отсутствует text-align */
+  text-align: center;
   border: none;
   background: transparent;
 }
@@ -43,9 +43,7 @@
   border: 1px solid var(--btn-color);
 }
 
-.header__theme-menu-button:focus {
-  outline: none;
-}
+/* Отсутствуют состояния :focus для кнопок */
 
 .header__theme-menu-button:focus-visible {
   border-bottom: 1px solid var(--btn-color);
@@ -93,8 +91,7 @@
   content: "";
   border-top: 1px solid var(--btn-color);
   border-right: 1px solid var(--btn-color);
-  inline-size: 25px;
-  block-size: 25px;
+  /* Отсутствуют inline-size и block-size */
   margin: 20px;
 }
 
@@ -105,8 +102,7 @@
   content: "";
   border-bottom: 1px solid var(--btn-color);
   border-left: 1px solid var(--btn-color);
-  inline-size: 25px;
-  block-size: 25px;
+  /* Отсутствуют inline-size и block-size */
   margin: 20px;
 }
 
@@ -163,7 +159,13 @@
   border-bottom: 1px solid var(--text-color);
 }
 
-/* Отсутствуют состояния :focus и :focus-visible для ссылок */
+.question__section-answer-link:focus {
+  outline: none;
+}
+
+.question__section-answer-link:focus-visible {
+  border: 1px solid var(--text-color);
+}
 
 /*Первая секция с вопросами*/
 
