@@ -51,7 +51,6 @@
   border-bottom: 1px solid var(--btn-color);
 }
 
-/* Ошибка 4: должно быть разное поведение для light и dark тем */
 .header__theme-menu-button:hover {
   border: 1px solid rgba(255, 0, 112, 0.40);
   cursor: pointer;
@@ -168,7 +167,6 @@
   outline: none;
 }
 
-/* Ошибка 5: должно быть outline вместо border */
 .question__section-answer-link:focus-visible {
   border: 1px solid var(--text-color);
 }
