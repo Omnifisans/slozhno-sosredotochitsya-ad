@@ -31,9 +31,9 @@
 .header__theme-menu-button {
   padding: 0 13px;
   color: var(--btn-color);
-  text-align: center;
+  /* Отсутствует text-align */
   border: none;
-  /* Отсутствует background: transparent */
+  background: transparent;
 }
 
 /*Действия на кнопки*/
@@ -116,7 +116,9 @@
   margin-left: -20px;
   text-shadow: 4px 4px 0 var(--accent-color);
   font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
-  /* Отсутствует color и font-weight */
+  color: var(--title-color);
+  font-weight: 700;
+  /* Отсутствует line-height */
 }
 
 .title-decor {
