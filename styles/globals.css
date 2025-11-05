@@ -1,12 +1,13 @@
 /* Глобальные стили для проекта, их можно дополнять и менять по желанию */
 
 * {
-  box-sizing: border-box; /* Неполное наследование для псевдоэлементов */
+  box-sizing: border-box;
 }
 
 body {
   min-inline-size: 375px;
-  margin: 0 auto; /* Отсутствует max-inline-size */
+  max-inline-size: 1440px;
+  margin: 0 auto;
 }
 
 h1,
